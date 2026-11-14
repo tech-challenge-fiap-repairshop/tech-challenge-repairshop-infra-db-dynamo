@@ -34,7 +34,7 @@ tech-challenge-repairshop-infra-db-dynamo/
 ├── .github/workflows/         # Pipeline Terraform Plan & Apply (GitHub Actions)
 ├── infra/
 │   ├── environments/          # dev.tfvars, hml.tfvars, prd.tfvars
-│   ├── backend.tf             # Remote state S3 (bucket: fiap-repairshop2)
+│   ├── backend.tf             # Remote state S3 (bucket: fiap-repairshop-{ACCOUNT_ID})
 │   ├── main.tf                # Tabelas tb-service_order e tb-payment + GSIs
 │   ├── outputs.tf             # Nomes e ARNs das tabelas DynamoDB
 │   ├── providers.tf           # Configuração do AWS Provider
